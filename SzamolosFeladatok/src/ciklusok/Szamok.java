@@ -11,6 +11,7 @@ public class Szamok {
     private static void feladatok(){
         feladat1();
         feladat2();
+        feladat3();
     }
     private static void feladat1(){
         int db=0;
@@ -34,5 +35,12 @@ public class Szamok {
             for(int jx=1;jx<145/11;jx++)
                 if(7*ix+11*jx==145)
                     System.out.printf("x: %d y: %d\r\n", ix, jx);
+    }
+    
+    private static void feladat3(){
+        for(int ix=1;ix<=100-2;ix++)
+            for(int jx=1;jx<=100-2;jx++)
+                if(3.5*ix+jx+.5*(100-ix-jx)==100.0)
+                    System.out.printf("Sertés: %d\r\nKecske: %d\r\nJuh: %d\r\n\r\n",ix, jx, 100-ix-jx);
     }
 }
